@@ -3,6 +3,9 @@
     margin: 0%;
 background-color: rgb(255, 221, 0);
 }
+body:hover{
+    cursor: url("cursor.jpg"),auto;
+}
 
 header {
     height: 60px;
@@ -127,12 +130,15 @@ section {
     box-shadow:-10px -10px rgba(238, 236, 236, 0.596);
     border: 10px rgba(252, 224, 10, 0.488) solid;
   
+    
+  
 }
  #img{
     border-radius: 10px;
     border: 5px solid rgba(0, 0, 0, 0.648);
     border-bottom: 5px solid rgb(255, 221, 0);
-    
+    position: sticky;
+    top: 100px;
  }
 #inf {
     width: 60%;
@@ -174,6 +180,8 @@ pre{
     text-shadow: 0 0 20px rgb(255, 255, 255);
  -webkit-text-stroke-width: 0.5px;
  -webkit-text-stroke-color: rgb(255, 255, 255);
+ /* position: sticky;
+ top: 120px; */
 }
 #div3{
     color:rgb(0, 255, 38);
@@ -218,22 +226,59 @@ main{
     border-radius: 6px;
 }
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 20px;
+    background-color: rgb(11, 13, 13);
+    border: 2px solid yellow;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background:linear-gradient(0deg,red,rgb(0, 255, 0),white,rgb(255, 255, 255));
+    background:linear-gradient(0deg,rgba(255, 0, 0, 0.385),rgb(0, 255, 0),white,rgba(255, 255, 255, 0.281));
     border-radius: 6px;
-    border: 1px solid red;
-    box-shadow: 0 0 50px cyan;
+    border:0px 2px 0px 2px solid rgba(0, 0, 0, 0.542);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    width: 15px;
+    margin: 2px;
 }
 @media only screen and (max-width:550px){
     *{
-        scale: 0.88;
+        scale: 0.9;
     }
-    img{
-        scale: 0.4;
+   #img{
+        scale: 0.9;
     }
     #g{
         transform: translateX(-125px);
+    }
+    .image{
+        scale: 0.3;
+    }
+    #inf{
+        scale: 0.5; 
+    }
+    header{
+        align-items: center;
+    }
+}
+@media only screen and (max-width:700px){
+    *{
+        scale: 0.9;
+    }
+    header{
+        align-items: center;
+    }
+    #img{
+        /* scale: 0.95; */
+        width: 200px;
+        height: 360px;
+        margin: 0px;
+    }
+    #g{
+        transform: translateX(-125px);
+    }
+    .image{
+        scale: 0.3;
+    }
+    #inf{
+        scale: 0.65; 
     }
 }
