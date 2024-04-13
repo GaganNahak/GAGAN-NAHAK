@@ -127,9 +127,9 @@ section {
 .image{
     border-radius: 50%;
     height: 400px;
-    box-shadow:-10px -10px rgba(238, 236, 236, 0.596);
+    /* box-shadow:-10px -10px rgba(238, 236, 236, 0.596); */
     border: 10px rgba(252, 224, 10, 0.488) solid;
-  
+  animation: img 2s  ease-in;
     
   
 }
@@ -210,7 +210,9 @@ main{
     text-align: center;
     color: white;
     height: 200px;
+    animation: img 6s ease-in;
 }
+
 #s_head{
  color: white;
  -webkit-text-stroke-width: 0.3px;
@@ -281,4 +283,31 @@ main{
     #inf{
         scale: 0.65; 
     }
+}
+@keyframes img{
+    0%{
+    scale:0;
+    }
+    /* 20%{
+        scale:0.2;
+    }
+    40%{
+        scale:0.4;
+    } */
+    /* 60%{
+        scale:0.6
+    } */
+    /* 80%{
+        scale:0.8;
+    } */
+    100%{
+        bscale:1;
+    }
+}
+audio{
+    background-color:greenyellow;
+    width: 110px;
+    position: relative;
+    left: 50px;
+    
 }
