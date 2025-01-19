@@ -215,6 +215,7 @@ main{
   margin-top: 50px;
   text-align: center;
   border-top: 5px solid rgba(255, 255, 255, 0.468);
+  display: block;
 }
 #edu{
     margin-bottom: 50px;
@@ -234,6 +235,7 @@ main{
  -webkit-text-stroke-color: rgb(113, 34, 34);
  position: relative;
  top: 0px;
+ text-decoration: underline white;
 }
  
  
@@ -262,26 +264,50 @@ main{
   margin: 2px;
     animation: scrollAn   linear    ;
     animation-timeline: view();
-    animation-range:  0% cover 70%;
+    animation-range:  0% cover 50%;
 }
                                  /* RESPONSINESS OF THE PIRTFOLIO PAGE */
 @keyframes scrollAn{
     0%{
         opacity: -0;
-          
+         transform: translateX(-100px);
         scale: 0;
     }
     
     100%{
         opacity: 1;
-         
+        transform: translateX(0px);
         scale: 1;
     }
+}
+@keyframes scrollAnSk{
+    0%{
+        opacity: -0;
+         color: rgba(190, 3, 247, 0.512);
+         
+    }
+    
+    100%{
+        opacity: 1;
+        color: aliceblue; 
+         
+    }
+}
+h3{
+    color: white;
+    animation: scrollAnSk   linear    ;
+    animation-timeline: view();
+    animation-range:  0% cover 70%;
+     
 }
 
 .footLink{
     display: block;
-    margin: 5px;
+    margin: 20px;
+  text-decoration:1px underline rgb(13, 255, 1);
+  color: rgb(0, 255, 38);
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
     width: fit-content;
     background: transparent;
 }
