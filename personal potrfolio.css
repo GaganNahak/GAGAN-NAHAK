@@ -262,7 +262,7 @@ main{
   margin: 2px;
     animation: scrollAn   linear    ;
     animation-timeline: view();
-    animation-range:  0% cover 50%;
+    animation-range:  0% cover 70%;
 }
                                  /* RESPONSINESS OF THE PIRTFOLIO PAGE */
 @keyframes scrollAn{
